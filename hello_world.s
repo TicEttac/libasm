@@ -4,11 +4,11 @@
 _main:		mov		rax, 0x02000004
 			mov		rdi, 1
 			mov		rsi, message
-			mov		rdx, 13
+			mov		rdx, 14
 			syscall
 			mov		rax, 0x02000001
 			xor		rdi, rdi
 			syscall
 
 			section	.data
-message:	db		"hello, World", 10
+message:	db		"hello, World", 10, 0
